@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Name
+author: Kelyn Zhang
 title: "Applied Data Science Project Documentation"
 categories: ITD214
 ---
@@ -33,3 +33,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eg
 
 ## Source Codes and Datasets
 Upload your model files and dataset into a GitHub repo and add the link here. 
+https://github.com/kelynz/itd214proj
