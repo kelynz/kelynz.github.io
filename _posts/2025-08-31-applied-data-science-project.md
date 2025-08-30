@@ -65,6 +65,7 @@ Model Selection - Chosen Models for Training and Comparison
 Based on these metrics, the **Random Forest model** appears to perform slightly better than the XGBoost model on this dataset for predicting log_loves_count.
 
 **SHAP Explanation**
+
 <img width="605" height="427" alt="image" src="https://github.com/user-attachments/assets/08bc7bdf-ad4e-4572-9998-7d0287b89329" />
 
 Both models captured the same top three most influential features for predicting high loves_count:
