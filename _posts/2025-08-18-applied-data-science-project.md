@@ -1,16 +1,26 @@
 ---
 layout: post
-author: Kelyn Zhang
+author: Zhang Huaiyue (Kelyn)
 title: "Applied Data Science Project Documentation"
 categories: ITD214
 ---
 ## Project Background
-Provide an overview of your team's project business goals and objectives and state the objective that you are working on. 
+Sephora is a global leader in the beauty retail industry that offers thousands of products from numerous brands to a diverse customer base.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+Why Sephora?
+*   **Real-world business relevance** 
+*   **Large and diverse customer base** - Sephora serves **millions of customers globally**, with diverse demographics (age, gender, location, skin types, preferences). 
+*   **Rich product category** (e.g., skin care, hair product, eye product etc)
+*   **Engagement ecosystem** : through reviews, ratings, and social features like “loves” and helpful votes.
+
+**Group Objective:**
+Enhance Sephora’s customer satisfaction, uncover customer preferences, and drive product development decisions
+
+**Individual Objective**
+Identify factors that influence loves counts of product e.g. category, brand, ratings, price, size in order to optimize product features or marketing strategies. 
 
 ## Work Accomplished
-Document your work done to accomplish the outcome
+1. 
 
 ### Data Preparation
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
