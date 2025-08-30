@@ -60,14 +60,29 @@ Model Selection - Chosen Models for Training and Comparison
 * R-squared: 0.7665 (better predictive accuracy and can explain slightly larger proportion of variance)
 * The predicted vs actual plot also shows strong alignment, with predictions closely following the red dashed line.
 * The residuals for Random Forest have skewness of -1.5637, slightly more negative than XGBoost, and kurtosis of 13.6031, which is slightly lower than XGBoost, indicating less extreme values in the residuals.
-Conclusion:
-Based on these metrics, the Random Forest model appears to perform slightly better than the XGBoost model on this dataset for predicting log_loves_count.
+
+### Conclusion:
+Based on these metrics, the **Random Forest model** appears to perform slightly better than the XGBoost model on this dataset for predicting log_loves_count.
+
+**SHAP Explanation**
+<img width="605" height="427" alt="image" src="https://github.com/user-attachments/assets/08bc7bdf-ad4e-4572-9998-7d0287b89329" />
+
+Both models captured the same top three most influential features for predicting high loves_count:
+* log_reviews
+* brand_name_encoded
+* child_count
+These features show a significant impact on the model outputs, as observed in the SHAP summary plots. 
+
+For both models, log_reviews exhibits the highest variation in SHAP values, with positive values leading to higher predictions of loves_count. Similarly, brand_name_encoded and child_count also display strong influences, with varying degrees of effect as the feature values change.
+
+The relationship between these features and the model's predictions remains consistent across both models, indicating that they are equally influential in predicting the target variable, loves_count.
 
 ## AI Ethics
-Discuss the potential data science ethics issues (privacy, fairness, accuracy, accountability, transparency) in your project. 
+1. Privacy - Dataset does not contain any personal identifiable information or sensitive user data. Since no personal data is involved, there are minimal concerns regarding privacy.
+2. Fairness - Dataset does not contain any factors such as race, gender, age or any demographics attributes that could introduce bias into model's prediction. This reduces the risk of creating biased prediction that could unfairly favor certain groups.
+3. Accuracy - Dataset is as per Kaggle's repository collected via Scraper in March 2023 so accuracy of predictions is limited by data available at that time. Cross-validation is performed by comparing between two strong models (XGBoost and Random Forest Regressor) showing that the model is reliable based on these tests.
+4. Accountability - Dataset does not include historical time-based data. This means the model cannot capture the full dynamic nature of how a product's popularity have evolved over time e.g. newer product may not have  as many loves_count as product have been available for longer period. Also, the model is designed to provide broad-based insights without specifically targetting any product categories, reducing the risk of overfitting or overly narrow predictions. However, accountability becomes relevant if the model's outputs are used to make real-world decisions so in such cases, it's important to provide ongoing monitoring to ensure model's predictions align with real-time data. 
+6. Transparency - SHAP is used to explain the results returned by both XGBoost and Random Forest Regressor model which are considered black-box models. SHAP helps to explain the contributions of each feature making the model more interpretable.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
-
-## Source Codes and Datasets
-Upload your model files and dataset into a GitHub repo and add the link here. 
+## Source Codes and Datasets 
 https://github.com/kelynz/itd214proj
