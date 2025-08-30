@@ -41,14 +41,27 @@ Training Dataset: 80%    Test Dataset: 20%
 Model Selection - Chosen Models for Training and Comparison
 <img width="697" height="304" alt="image" src="https://github.com/user-attachments/assets/ad39e738-66d3-4e59-aab0-7c6a2c8f34a4" />
 
-
 ### Evaluation
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+
+<img width="696" height="323" alt="image" src="https://github.com/user-attachments/assets/bd2ffdc1-c974-4758-ba31-3f8e8aed5269" />
+<img width="624" height="363" alt="image" src="https://github.com/user-attachments/assets/bc2d189f-f883-4e5b-bf95-df7efaf26ce2" />
+<img width="676" height="351" alt="image" src="https://github.com/user-attachments/assets/fd6bb61d-6511-417d-8b1b-7aca165fa9f5" />
+
 
 ## Recommendation and Analysis
-Explain the analysis and recommendations
+**XGBoost Model:**
+* Test RMSE: 0.8972
+* R-squared: 0.7654
+* The predicted vs actual plot shows a relatively strong alignment with the diagonal red dashed line, indicating that the model's predictions are closely matching the actual values.
+* The residuals distribution for XGBoost has a skewness of -1.2599, indicating a slight leftward skew, and a kurtosis of 15.3195, suggesting the residuals have heavy tails (i.e., the model has some larger residual errors).
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+**Random Forest Model:**
+* Test RMSE: 0.8951
+* R-squared: 0.7665 (better predictive accuracy and can explain slightly larger proportion of variance)
+* The predicted vs actual plot also shows strong alignment, with predictions closely following the red dashed line.
+* The residuals for Random Forest have skewness of -1.5637, slightly more negative than XGBoost, and kurtosis of 13.6031, which is slightly lower than XGBoost, indicating less extreme values in the residuals.
+Conclusion:
+Based on these metrics, the Random Forest model appears to perform slightly better than the XGBoost model on this dataset for predicting log_loves_count.
 
 ## AI Ethics
 Discuss the potential data science ethics issues (privacy, fairness, accuracy, accountability, transparency) in your project. 
