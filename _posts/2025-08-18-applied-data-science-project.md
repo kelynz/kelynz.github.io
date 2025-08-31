@@ -20,8 +20,8 @@ Enhance Sephora’s customer satisfaction, uncover customer preferences, and dri
 Identify factors that influence loves counts of product e.g. category, brand, ratings, price, size in order to optimize product features or marketing strategies. 
 
 ## Work Accomplished
-Cleaned up the dataset and prepared a final dataset with 22 features (target variable - log_loves_count).
-Training Dataset: 80%    Test Dataset: 20%
+Cleaned up the dataset and prepared a final dataset with 15 features
+Target variable - log_loves_count (continuous variable)
 
 ### Data Preparation
 * Data Exploration
@@ -32,11 +32,20 @@ Training Dataset: 80%    Test Dataset: 20%
   * Product Size - Using regex to identify the numerical values and the units, putting it into numerical column (size_value) with a categorical column (unit)
 * Data Preprocessing
   * Dropped identifier columns and irrelevant columns
-  * Apply One-Hot encoding, Target encoding, Frequency Encoding
-  * Log-Transformation
   * Imputing missing values
+  * Apply One-Hot encoding, Target encoding, Frequency Encoding
+  * Create interactive features
+    * price_per_unit (price/unit)
+    * popularity (loves_count/reviews)
+  * Log-Transformation
+  * Remove lowest importance feature
  
 ### Modelling
+
+Applied stratified sampling (qcut=4 on target variable)
+Training Dataset: 60%
+Validation Dataset: 20%
+Testing Dataset: 20%
 
 Model Selection - Chosen Models for Training and Comparison
 <img width="697" height="304" alt="image" src="https://github.com/user-attachments/assets/ad39e738-66d3-4e59-aab0-7c6a2c8f34a4" />
